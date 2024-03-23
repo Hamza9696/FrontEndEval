@@ -14,7 +14,7 @@ Ces tests sont par défaut en mode _watch_, ce qui veut dire que vous pouvez dé
 
 ```bash
 # télécharger votre projet :
-git clone https://github.com/Hamza9696/amu-frontend-eval.git
+git clone https://github.com/Hamza9696/FrontEndEval.git
 
 # entrer dans le dossier
 cd FrontEndEval

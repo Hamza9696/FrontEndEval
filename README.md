@@ -1,7 +1,7 @@
 
 ## Tests cypress : 
 
-![alt text](https://github.com/Hamza9696/FrontEndEval/docs/test-cypress?raw=true)
+![Cypress Test Screenshot](docs/test-cypress.png)
 
 
 

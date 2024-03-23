@@ -1,0 +1,27 @@
+<div class="create-client-container">
+  <h2>Créer un client</h2>
+  <form #clientForm="ngForm" (ngSubmit)="onSubmit($event)">
+    <div class="form-group">
+      <label for="fullName">Nom complet</label>
+      <input #fullName="ngModel" [(ngModel)]="client.fullName" class="form-control" id="fullName" name="fullName" required
+             type="text">
+      <div *ngIf="fullName.invalid && (fullName.dirty || fullName.touched)" class="alert alert-danger">
+        Nom complet est requis.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input #email="ngModel" [(ngModel)]="client.email" class="form-control" email id="email" name="email" required
+             type="email">
+      <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+        <div *ngIf="email.errors?.required">
+          Email est requis.
+        </div>
+        <div *ngIf="email.errors?.email">
+          Entrez une adresse email valide.
+        </div>
+      </div>
+    </div>
+    <button [disabled]="clientForm.form.invalid" class="btn btn-primary" type="submit">Enregistrer</button>
+  </form>
+</div>

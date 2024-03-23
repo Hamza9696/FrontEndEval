@@ -1,0 +1,26 @@
+.client-details-container {
+  margin: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.client-email {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+button.mat-stroked-button, button.mat-flat-button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+mat-icon {
+  margin-right: 8px;
+}
+
+/* Continue with the rest of your CSS */

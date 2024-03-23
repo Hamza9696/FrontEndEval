@@ -1,0 +1,10 @@
+<div class="client-list-container">
+  <h2>Liste des clients</h2>
+  <button routerLink="/create">Créer un client</button>
+  <div class="client-list">
+    <div *ngFor="let client of clients" class="client-item">
+      <a class="client-name" routerLink="{{ client.id }}">{{ client.fullName }}</a>
+      <span class="client-email">{{ client.email }}</span>
+    </div>
+  </div>
+</div>

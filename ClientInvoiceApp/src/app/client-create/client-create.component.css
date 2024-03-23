@@ -1,0 +1,58 @@
+.create-client-container {
+  margin: 20px;
+  width: 100%;
+  font-family: 'Arial', sans-serif; /* Consistent font */
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space out the form elements */
+}
+
+label {
+  display: block; /* Ensure the label is on its own line */
+  margin-bottom: 5px;
+  color: #555; /* A color that is easy to read */
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+.form-control {
+  display: block;
+  width: 100%; /* Full width to maximize space */
+  padding: 10px;
+  font-size: 16px; /* Larger font size for better readability */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Rounded corners for modern look */
+  margin-bottom: 10px; /* Space below inputs */
+}
+
+button.btn-primary {
+  padding: 10px 20px;
+  background-color: #007BFF; /* Bootstrap primary color for example */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block; /* Make the button a block to take full width */
+  width: 100%;
+  margin-top: 10px; /* Space above the button */
+}
+
+button.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Handling the responsiveness */
+@media (max-width: 768px) {
+  .create-client-container {
+    margin: 10px;
+  }
+}

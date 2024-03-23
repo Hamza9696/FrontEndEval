@@ -1,0 +1,17 @@
+<div class="invoice-create-container">
+  <h2>Créer une facture</h2>
+  <form (ngSubmit)="onSubmit($event)">
+    <div class="form-group">
+      <label for="amount">Montant de la facture</label>
+      <input [(ngModel)]="invoice.amount" class="form-control" id="amount" name="amount" required type="number">
+    </div>
+    <div class="form-group">
+      <label for="status">Statut</label>
+      <select #status [(ngModel)]="invoice.status" class="form-control" id="status" name="status">
+        <option value="SENT">Envoyée</option>
+        <option value="PAID">Payée</option>
+      </select>
+    </div>
+    <button [disabled]="!invoice.amount || !status.value" class="btn btn-primary" type="submit">Enregistrer la facture</button>
+  </form>
+</div>

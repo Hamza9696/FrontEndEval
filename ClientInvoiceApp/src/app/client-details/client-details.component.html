@@ -1,0 +1,30 @@
+<div class="client-details-container">
+  <h1>Fiche de {{ client?.fullName }}</h1>
+  <p class="client-email">{{ client?.email }}</p>
+
+  <button color="primary" mat-stroked-button routerLink="/">
+    <mat-icon>arrow_back</mat-icon>
+    Retour aux clients
+  </button>
+
+  <div class="table-responsive">
+    <table>
+      <thead>
+      <tr>
+        <th>Montant</th>
+        <th>Status</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let invoice of invoices">
+        <td>{{ invoice.amount }} €</td>
+        <td>{{ invoice.status }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <button [routerLink]="['/', clientId, 'invoices', 'add']" color="accent" mat-flat-button>
+    <mat-icon>add_circle_outline</mat-icon>
+    Créer une facture
+  </button>
+</div>

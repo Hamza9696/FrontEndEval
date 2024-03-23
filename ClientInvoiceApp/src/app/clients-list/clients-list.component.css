@@ -1,0 +1,79 @@
+.client-list-container {
+  margin: 20px;
+  width: 100%;
+  font-family: 'Arial', sans-serif; /* Example font */
+}
+
+h2 {
+  color: #333;
+  font-size: 24px; /* Adjust size as needed */
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #007BFF; /* Bootstrap primary color for example */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.client-list {
+  width: 70%;
+  margin: 0 auto; /* Center the client list */
+  border-collapse: collapse; /* For tables if you convert divs to table */
+  border: 1px solid #ccc;
+}
+
+.client-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.client-item:hover {
+  background-color: #f2f2f2; /* Slight highlight on hover */
+}
+
+.client-item:last-child {
+  border-bottom: none;
+}
+
+.client-email {
+  color: #555; /* Darker font color for readability */
+  text-align: left;
+  margin-left: 10px;
+  flex: 1; /* Allows it to take up the rest of the space */
+}
+
+.client-name {
+  flex: 1; /* Adjust as needed */
+  font-weight: bold; /* Makes the name stand out more */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .client-list {
+    width: 100%;
+  }
+
+  .client-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .client-email {
+    margin-left: 0;
+    margin-top: 10px; /* Add space between name and email on smaller screens */
+  }
+}

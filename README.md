@@ -1,7 +1,7 @@
 
 # Tests cypress : 
 
-![Cypress Test Screenshot](docs/test-cypress.png)
+![Cypress Test Screenshot](docs/test-Cypress.png)
 
 
 

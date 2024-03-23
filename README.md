@@ -10,7 +10,7 @@ Vous pouvez lancer la procédure de tests fonctionnels grâce à `npm run cy:ope
 Ces tests sont par défaut en mode _watch_, ce qui veut dire que vous pouvez développer tout en gardant les tests ouverts et constater de votre avancée dessus.
 
 
-# Lanceent de l'application : 
+# Lancement de l'application : 
 
 ```bash
 # télécharger votre projet :

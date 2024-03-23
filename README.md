@@ -1,5 +1,5 @@
 
-## Tests cypress : 
+# Tests cypress : 
 
 ![Cypress Test Screenshot](docs/test-cypress.png)
 

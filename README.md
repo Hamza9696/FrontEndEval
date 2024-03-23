@@ -1,7 +1,7 @@
 
-## Tests cyrpress : 
+## Tests cypress : 
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/Hamza9696/FrontEndEval/docs/test-cypress?raw=true)
 
 
 

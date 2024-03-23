@@ -1,6 +1,3 @@
-# Evaluation pratique du module IHM Web
-
-Dans cette évaluation, vous allez mettre en oeuvre et un projet d'application frontend de gestion de clients et de factures destiné aux indépendants et aux commerçants.
 
 ## Conseils pour le développement
 
@@ -13,3 +10,23 @@ Vous pouvez lancer la procédure de tests fonctionnels grâce à `npm run cy:ope
 Ces tests sont par défaut en mode _watch_, ce qui veut dire que vous pouvez développer tout en gardant les tests ouverts et constater de votre avancée dessus.
 
 
+# Lanceent de l'application : 
+
+```bash
+# télécharger votre projet :
+git clone url_de_votre_projet
+
+# entrer dans le dossier
+cd FrontEndEval
+
+# télécharger les dépendances 
+npm install @angular/router @angular/material
+
+# lancer l'application :
+npm run start
+
+# lancer les tests :
+npm run cy:run
+# ou
+npm run cy:open
+```
